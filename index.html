@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/96a4078e7c.js" crossorigin="anonymous"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- nav container -->
+    <nav class="bg-gradient-to-r from-slate-950 via-slate-900 to-gray-950 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="" class="text-white text-xl font-bold">Echo29</a>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-xl text-white" id="navBtn"></i>
+                <i class="fa-solid fa-xmark text-xl text-white active" id="navClose"></i>
+            </div>
+
+            <div class="hidden md:flex space-x-4">
+                <a href="#homeSection" class="text-white hover:text-gray-300">Home</a>
+                <a href="#aboutSection" class="text-white hover:text-gray-300">About</a>
+                <a href="#productsSection" class="text-white hover:text-gray-300">Products</a>
+                <a href="#contactSection" class="text-white hover:text-gray-300">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="bg-black md:hidden flex flex-col space-y-4 p-4 active" id="navItems">
+        <a href="#homeSection" class="text-white hover:text-gray-300">Home</a>
+        <!--         <hr class="text-white"/> -->
+        <a href="#aboutSection" class="text-white hover:text-gray-300">About</a>
+        <a href="#productsSection" class="text-white hover:text-gray-300">Products</a>
+        <a href="#contactSection" class="text-white hover:text-gray-300">Contact</a>
+    </div>
+
+
+    <!-- home -->
+    <div id="homeSection" class="bg-black h-screen flex flex-col justify-center items-center">
+        <i class="fa-solid fa-headphones text-white text-7xl"></i>
+        <div class="mt-5 space-x-4">
+            <a href="#aboutSection"><button class="border-2 border-slate-600 border-solid text-white text-sm h-10 w-25 md:w-30 rounded-4xl">Get Started</button></a>
+            <a href="#productsSection"><button class="border-2 border-slate-300 border-solid text-white text-sm h-10 w-25 md:w-30 rounded-4xl">Buy Now</button></a>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="aboutSection" class="bg-black h-screen flex flex-col justify-center items-center">
+
+        <h1 class="text-white text-xl font-bold"> Echo </h1>
+        <p class="text-gray-300 text-xs mb-5"> Where Style Meets Sound </p>
+        <div class="text-center">
+            <p class="text-white text-xs md:hidden m-5">Crafted for those who crave clarity, Echo Earbuds deliver immersive audio with a futuristic design.
+                Engineered with precision, they offer a seamless fit, active noise cancellation, and long-lasting battery life — all wrapped in a sleek, minimalist look.
+                Whether you're tuning in or tuning out, Echo lets you hear the future.</p>
+
+            <p class="text-white text-sm hidden md:block m-5">Crafted for those who crave clarity, Echo Earbuds deliver immersive audio with a futuristic design.<br />
+                Engineered with precision, they offer a seamless fit, active noise cancellation, and long-lasting battery <br /> life — all wrapped in a sleek, minimalist look.
+                Whether you're tuning in or tuning out, Echo lets you hear the future.</p>
+        </div>
+    </div>
+
+    <!-- best selling -->
+    <div id="productsSection" class="bg-black h-full p-4">
+        <h2 class="text-white text-lg mb-5 text-center">Best Selling</h2>
+        <div class="flex flex-col items-center space-y-2 md:flex-row space-x-3 justify-center ">
+            <div class="bg-black w-64 overflow-hidden max-w-sm rounded border border-solid border-gray-500 border-0.5">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539361/tvwto3rm7xqazsbxg6dn.jpg" class="w-full" />
+                <div class="m-3">
+                    <h5 class="text-white text-base"> Echo mini </h5>
+                    <p class="text-gray-500 text-xs">True Wireless Earbuds</p>
+                    <p class="text-gray-300 text-sm"> 3999/-</p>
+                </div>
+            </div>
+            <div class="bg-black w-64 overflow-hidden max-w-sm rounded border border-solid border-gray-500 border-0.5">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539361/hf2kmikcvqnbmvdcgiz0.jpg" class="w-full" />
+                <div class="m-3">
+                    <h5 class="text-white text-base"> Echo mini-pro </h5>
+                    <p class="text-gray-500 text-xs">True Wireless Earbuds</p>
+                    <p class="text-gray-300 text-sm"> 4999/-</p>
+                </div>
+            </div>
+            <div class="bg-black w-64 overflow-hidden max-w-sm rounded border border-solid border-gray-500 border-0.5">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539362/yllbb4keoiqplsoa98ql.jpg" class="w-full" />
+                <div class="m-3">
+                    <h5 class="text-white text-base"> Echo 2 </h5>
+                    <p class="text-gray-500 text-xs">True Wireless Earbuds</p>
+                    <p class="text-gray-300 text-sm"> 3999/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new arrivals -->
+    <div class="bg-black h-full pt-5 pb-5">
+        <h1 class="text-white text-base text-center mb-5">New Arrivals</h1>
+        <div class="flex flex-col space-y-2">
+            <div class="sm:w-full md:w-100 xl:w-150">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539363/rofceblwma4oli6ir6fg.jpg" class="w-full md:h-42 md:rounded-r-xl">
+            </div>
+            <div class="sm:w-full md:w-100 xl:w-150 md:self-end">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539361/zjvlssb0tsnpyquenwpr.jpg" class="w-full md:h-42 md:rounded-l-xl">
+            </div>
+            <div class="sm:w-full md:w-100 xl:w-150">
+                <img src="https://res.cloudinary.com/dpencg7d8/image/upload/v1749539361/pcnv0qducua7zk6imxtb.jpg" class="w-full md:h-42 md:rounded-l-xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="bg-black h-screen flex flex-col justify-center items-center p-4">
+        <h1 class="text-gray-400 text-lg mb-5">FAQ</h1>
+        <ul class="md:w-200">
+
+            <li class="bg-black border border-gray-600 border-solid border-l-0 border-b-0 border-r-0 m-2 flex justify-between items-center p-2 space-x-2">
+                <p class="text-sm text-gray-500"> Why Should I buy Echo earbuds? </p>
+                <i class="fa-solid fa-caret-down text-gray-600"></i>
+            </li>
+            <li class="bg-black border border-gray-600 border-solid border-l-0 border-b-0 border-r-0 m-2 flex justify-between items-center space-x-2 p-2">
+                <p class="text-sm text-gray-500"> Which is better, Echo or AirPods? </p>
+                <i class="fa-solid fa-caret-down text-gray-600"></i>
+            </li>
+            <li class="bg-black border border-gray-600 border-solid border-l-0 border-b-0 border-r-0 m-2 flex justify-between items-center space-x-2 p-2">
+                <p class="text-sm text-gray-500"> How do I reset my Sleep A20 earbuds? </p>
+                <i class="fa-solid fa-caret-down text-gray-600"></i>
+            </li>
+            <li class="bg-black border border-gray-600 border-solid border-l-0 border-r-0 m-2 flex justify-between items-center space-x-2 p-2">
+                <p class="text-sm text-gray-500"> How do I figure out what size earbuds I need? </p>
+                <i class="fa-solid fa-caret-down text-gray-600"></i>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- end context -->
+    <div id="contactSection" class="bg-black h-full flex flex-col pt-5 pb-20 space-y-5">
+        <i class="fa-solid fa-headphones text-white text-2xl self-center mb-5"></i>
+        <div class="flex justify-between p-4 mt-5">
+            <ul class="space-y-2">
+                <li class="text-sm md:text-base text-zinc-400 font-bold">Legal Notice</li>
+                <li class="text-sm md:text-base text-zinc-700">Global Privacy Policy</li>
+                <li class="text-sm md:text-base text-zinc-700">General Terms and Conditions</li>
+                <li class="text-sm md:text-base text-zinc-700">Coordinated Vulnerability Disclosure Policy</li>
+            </ul>
+            <ul class="space-y-2 text-right">
+                <li class="text-sm md:text-base text-zinc-400 font-bold">Our Company</li>
+                <li class="text-sm md:text-base text-zinc-700">About us</li>
+                <li class="text-sm md:text-base text-zinc-700">Career at Echo</li>
+                <li class="text-sm md:text-base text-zinc-700">Contact us</li>
+            </ul>
+        </div>
+        <h5 class="text-xs text-gray-600 text-right mt-10 mr-5"> Designed by <span class="text-gray-400 font-bold">Vivek 29</span> | copyright © 2025</h5>
+    </div>
+
+    <!-- link to external JS file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
