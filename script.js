@@ -8,9 +8,7 @@ function navFunction() {
   navItems.classList.toggle("active");
 }
 
-window.onscroll = () => {
-  navItems.classList.remove("active");
-};
+
 
 navEl.addEventListener("click", navFunction);
 
